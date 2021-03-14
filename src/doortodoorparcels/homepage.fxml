@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1258.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doortodoorparcels.HomepageController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="135.0" prefWidth="1049.0" style="-fx-background-color: #0fbdbd;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="248.0" fitWidth="1258.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@door.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="503.0" prefWidth="187.0" spacing="2.0" style="-fx-background-color: #0fbdbd;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="profile" mnemonicParsing="false" onAction="#onActionProfile" prefHeight="58.0" prefWidth="178.0" style="-fx-background-color: ffffff;" text="Profile" />
+            <Button mnemonicParsing="false" onAction="#onActionRegister" prefHeight="62.0" prefWidth="178.0" style="-fx-background-color: ffffff;" text="Register Parcel" />
+            <Button mnemonicParsing="false" onAction="#onActionParcelStatus" prefHeight="61.0" prefWidth="178.0" style="-fx-background-color: white;" text="Parcel Status" />
+            <Button mnemonicParsing="false" onAction="#onActionCustomerRating" prefHeight="63.0" prefWidth="178.0" style="-fx-background-color: white;" text="Customer Rating" />
+            <Button mnemonicParsing="false" onAction="#onActionPromotions" prefHeight="62.0" prefWidth="178.0" style="-fx-background-color: white;" text="Promotions" />
+            <Button mnemonicParsing="false" onAction="#onActionComplain" prefHeight="64.0" prefWidth="178.0" style="-fx-background-color: white;" text="Complain" />
+            <Button mnemonicParsing="false" onAction="#onActionTransactions" prefHeight="58.0" prefWidth="178.0" style="-fx-background-color: white;" text="Transactions" />
+            <Button mnemonicParsing="false" onAction="#onActionLogout" prefHeight="59.0" prefWidth="178.0" style="-fx-background-color: white;" text="Logout" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" top="2.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>

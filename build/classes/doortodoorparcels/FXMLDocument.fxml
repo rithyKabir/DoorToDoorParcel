@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="homePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="721.0" prefWidth="955.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doortodoorparcels.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-14.0" layoutY="-8.0" minHeight="-Infinity" prefHeight="247.0" prefWidth="971.0" style="-fx-background-image: door.jpg;">
+         <children>
+            <ImageView fitHeight="265.0" fitWidth="971.0">
+               <image>
+                  <Image url="@door.jpg" />
+               </image>
+            </ImageView>
+         </children></HBox>
+      <HBox layoutX="-12.0" layoutY="246.0" prefHeight="482.0" prefWidth="971.0" spacing="3.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="476.0" prefWidth="502.0" style="-fx-background-color: white;">
+               <children>
+                  <Text fill="#232b5c" strokeType="OUTSIDE" strokeWidth="0.0" text="Join Door To Door Parcel" textAlignment="CENTER" underline="true" wrappingWidth="403.9873046875">
+                     <font>
+                        <Font name="Georgia Bold Italic" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="433.0" spacing="25.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAME         " />
+                        <TextField fx:id="SignUpName" prefHeight="38.0" prefWidth="187.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="433.0" spacing="25.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL         " />
+                        <TextField fx:id="SignUpEmail" prefHeight="41.0" prefWidth="187.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="433.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD  " />
+                        <PasswordField fx:id="SignUpPassword" prefHeight="39.0" prefWidth="187.0" />
+                     </children>
+                  </HBox>
+                  <AnchorPane prefHeight="99.0" prefWidth="429.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="-16.0" layoutY="7.0" prefHeight="60.0" prefWidth="499.0" spacing="10.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BKASH/NAGAD    ACCOUNT NO" wrappingWidth="118.50732421875" />
+                              <TextField fx:id="NUMBER" prefHeight="40.0" prefWidth="184.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Button mnemonicParsing="false" onAction="#onActionSignUp" style="-fx-background-color: #0fbdbd;" styleClass="bodybg" stylesheets="@back1.css" text="Sign Up" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets top="60.0" />
+               </opaqueInsets>
+            </VBox>
+            <VBox id="vbox1" alignment="CENTER" prefHeight="516.0" prefWidth="469.0" style="-fx-background-color: blue;" styleClass="bodybg" stylesheets="@back1.css">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Have an Account?" underline="true" wrappingWidth="352.9541015625">
+                     <font>
+                        <Font name="Georgia Italic" size="27.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="CENTER" prefHeight="69.0" prefWidth="387.0" spacing="10.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="UserID" />
+                        <TextField fx:id="loginUserID" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="69.0" prefWidth="373.0" spacing="5.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                        <PasswordField fx:id="loginPassword" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onActionLoginAsAdmin" style="-fx-background-color: #ffffff;" text="Login As Admin" />
+                        <Button mnemonicParsing="false" onAction="#onActionLoginAsUser" style="-fx-background-color: #ffffff;" text="Login As User" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

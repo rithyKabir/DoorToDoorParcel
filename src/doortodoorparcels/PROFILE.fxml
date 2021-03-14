@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="1052.0" style="-fx-background-color: #0fbdbd;" stylesheets="@back1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doortodoorparcels.PROFILEController">
+   <children>
+      <HBox layoutX="5.0" layoutY="6.0" prefHeight="134.0" prefWidth="1075.0" spacing="5.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="222.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@parcel.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PARCEL REGISTERED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="total" fill="#f20909" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="127.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@DONE.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PARCEL DELIVEERED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="DELIVERED" fill="#f20909" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="134.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PENDING.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PARCEL PENDING">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="PENDING" fill="#f20909" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="267.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@DAM.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PARCEL DAMAGED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="DAMAGED" fill="#f20909" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="134.0" prefWidth="223.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@RETURN.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PARCEL RETURNED">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="RETURNED" fill="#f20909" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Serif Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets right="8.0" />
+         </opaqueInsets>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="145.0" prefHeight="355.0" prefWidth="1075.0" style="-fx-background-color: white;">
+         <children>
+            <VBox prefHeight="353.0" prefWidth="360.0" spacing="2.0" styleClass="bodybg" stylesheets="@back1.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="77.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@PP.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USER INFO" underline="true">
+                           <font>
+                              <Font name="Yu Gothic UI Semibold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USER ID :">
+                           <font>
+                              <Font name="Webdings" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="ID" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USER NAME :">
+                           <font>
+                              <Font name="Webdings" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="NAME" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USER EMAIL :">
+                           <font>
+                              <Font name="Webdings" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="EMAIL" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="77.0" prefWidth="355.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USER PHONE :">
+                           <font>
+                              <Font name="Webdings" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="PHONE" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets right="20.0" top="50.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="8.0" left="13.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="355.0" prefWidth="305.0" spacing="2.0" styleClass="bodybg" stylesheets="@back1.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="77.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@money.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TRANSACTION SUMMARY" underline="true">
+                           <font>
+                              <Font name="Yu Gothic UI Semibold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="2.0" right="2.0" />
+                     </padding>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="134.0" prefWidth="311.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@RM.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL RECEIVED AMOUNT">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="totalReceived" fill="#2b9a4a" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Serif Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="143.0" prefWidth="303.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ERF.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Text fill="#222121" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PENDING AMOUNT">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="totalPending" fill="#1b7256" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font name="Serif Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="2.0" right="2.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets right="20.0" top="50.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="355.0" prefWidth="391.0" spacing="2.0" styleClass="bodybg" stylesheets="@back1.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="85.0" prefWidth="387.0" spacing="8.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE INFO" underline="true">
+                           <font>
+                              <Font name="Yu Gothic UI Semibold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE PASSWORD :">
+                           <font>
+                              <Font name="Webdings" size="11.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="ID1" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="PASSWORDUPDATE" prefHeight="31.0" prefWidth="172.0" />
+                        <Button mnemonicParsing="false" onAction="#onActionPassword" prefHeight="28.0" prefWidth="60.0" text="OK" />
+                     </children>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE PHONE NO :">
+                           <font>
+                              <Font name="Webdings" size="11.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="UPDATEPHONE" prefHeight="31.0" prefWidth="173.0" />
+                        <Text fx:id="ID11" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#onActionPhone" prefHeight="28.0" prefWidth="60.0" text="OK" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE USER NAME :">
+                           <font>
+                              <Font name="Webdings" size="11.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="UPDATEUSERNAME" prefHeight="31.0" prefWidth="163.0" />
+                        <Text fx:id="ID111" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#onActionName" prefHeight="28.0" prefWidth="60.0" text="OK" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="307.0" spacing="8.0" style="-fx-background-color: FFFFFF;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE USER EMAIL :">
+                           <font>
+                              <Font name="Webdings" size="11.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="UPDATEUSEREMAIL" prefHeight="31.0" prefWidth="173.0" />
+                        <Text fx:id="ID112" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#onActionEmail" prefHeight="28.0" prefWidth="60.0" text="OK" />
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets right="20.0" top="50.0" />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets top="10.0" />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</AnchorPane>
